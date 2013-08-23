@@ -24,6 +24,12 @@ In your active theme, add a groups-forums folder. You can provide template files
 Default templates, which can also be used to derive your own, are provided in the plugin’s templates folder.
 Included are a `single-topic.php` and a `taxonomy-forum.php` template.
 
+Help with theme-specific templates
+----------------------------------
+
+If you need help with theme-specific templates and your theme is a free theme that can be downloaded, contact us on support at itthinx dot com with a link to where the theme can be obtained and ask for help on theme-specific templates for Groups Forums.
+If your theme is a premium theme, do the same and provide access to a copy of the theme so we can test it. Make sure you are the theme author or the author has given consent to do this.
+
 Contributing theme-specific templates
 -------------------------------------
 
@@ -31,29 +37,19 @@ If you want to contribute theme-specific templates, fork the <a href="https://gi
 
 If your theme is a free theme that can be downloaded, please add a readme.txt with a link to where it can be obtained.
 If your theme is a premium theme, please include a link to where it can be obtained as well and provide access to a copy of the theme so your theme-specific templates can be tested.
+For premium themes, make sure you are the theme author or the author has given consent to do this.
+
 Pull requests for themes we can not test will not be granted.
 
 Example: Assuming you're using a theme called Foobar that is in <code>wp-content/themes/foobar</code>, add the theme templates in <code>wp-content/themes/foobar/groups-forums</code>. To have it added to the repository, fork it, add the <code>foobar/groups-forums</code> folder to the root of the repository and issue a pull request.
 
 You should end up with the following folder structure:
 
-<ul>
-  <li>groups-forums-templates</li>
-  <li>
-    <ul>
-      <li>foobar</li>
-      <li>
-        <ul>
-          <li>groups-forums</li>
-          <li>
-            <ul>
-              <li>readme.txt</li>
-              <li>single-topic.php</li>
-              <li>taxonomy-forum.php</li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+<pre>
+groups-forums-templates (the root folder of this repository)
+- foobar (a new subfolder for the theme)
+  - groups-forums (a subfolder for the groups-forums templates)
+    readme.txt
+    single-topic.php
+    taxonomy-forum.php
+</pre>
