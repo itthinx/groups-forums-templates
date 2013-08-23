@@ -30,6 +30,8 @@ Help with theme-specific templates
 If you need help with theme-specific templates and your theme is a free theme that can be downloaded, contact us on support at itthinx dot com with a link to where the theme can be obtained and ask for help on theme-specific templates for Groups Forums.
 If your theme is a premium theme, do the same and provide access to a copy of the theme so we can test it. Make sure you are the theme author or the author has given consent to do this.
 
+Once theme-specific templates have been created, these will be added to the <a href="https://github.com/itthinx/groups-forums-templates">Groups Forums Templates</a> repository on GitHub.
+
 Contributing theme-specific templates
 -------------------------------------
 
