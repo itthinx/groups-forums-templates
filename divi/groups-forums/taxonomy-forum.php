@@ -51,9 +51,7 @@ get_header();
 
 		<?php
 			$thumb = '';
-
 			$width = (int) apply_filters( 'et_pb_index_blog_image_width', 1080 );
-
 			$height    = (int) apply_filters( 'et_pb_index_blog_image_height', 675 );
 			$classtext = 'et_pb_post_main_image';
 			$titletext = get_the_title();
