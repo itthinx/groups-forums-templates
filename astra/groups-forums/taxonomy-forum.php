@@ -26,18 +26,25 @@ get_header(); ?>
 
 		<?php astra_archive_header(); ?>
 
-		<?php echo '<br/>';
-				$user_id  = get_current_user_id();
-				if ( Groups_Forums::user_can_post( $user_id, $forum->term_id ) ) {
-					$edit_topic_post_id = Groups_Options::get_option( 'groups-forums-edit-topic-post-id', null );
-					if ( $edit_topic_post_id ) {
-						$link = add_query_arg( 'forum_id', $forum->term_id, get_permalink( $edit_topic_post_id ) );
-						echo '<div class="new-topic">';
-						echo sprintf( '<a href="%s">%s</a>', $link, __( 'Post a new Topic', GROUPS_FORUMS_PLUGIN_DOMAIN ) );
-						echo '</div>';
-						echo '<br/>';
+		<?php
+			if ( is_tax() ) {
+				global $wp_query;
+				if ( $forum = $wp_query->get_queried_object() ) {
+					if ( $forum && !is_wp_error( $forum ) ) {
+						$user_id  = get_current_user_id();
+						if ( Groups_Forums::user_can_post( $user_id, $forum->term_id ) ) {
+							$edit_topic_post_id = Groups_Options::get_option( 'groups-forums-edit-topic-post-id', null );
+							if ( $edit_topic_post_id ) {
+								$link = add_query_arg( 'forum_id', $forum->term_id, get_permalink( $edit_topic_post_id ) );
+								echo '<div class="new-topic">';
+								echo sprintf( '<a href="%s">%s</a>', $link, __( 'Post a new Topic', GROUPS_FORUMS_PLUGIN_DOMAIN ) );
+								echo '</div>';
+								echo '<br/>';
+							}
+						}
 					}
 				}
+			}
 		?>
 
 		<?php astra_content_loop(); ?>
