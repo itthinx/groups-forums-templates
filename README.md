@@ -31,4 +31,4 @@ Included are a `single-topic.php` and a `taxonomy-forum.php` template.
 Creating theme-specific legacy templates
 ----------------------------------------
 
-If you want to create theme-specific templates, you can base it on the examples in the <a href="https://github.com/itthinx/groups-forums-templates">Groups Forums Templates</a> repository on GitHub or the templates that are included in the plugin's <code>templates</code>code> directory.
+If you want to create theme-specific templates, you can base it on the examples in the <a href="https://github.com/itthinx/groups-forums-templates">Groups Forums Templates</a> repository on GitHub or the templates that are included in the plugin's <code>templates</code> directory.
