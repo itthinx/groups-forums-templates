@@ -1,7 +1,7 @@
 groups-forums-templates
 =======================
 
-Theme template examples for the <a href="http://www.itthinx.com/plugins/groups-forums/">Groups Forums</a> WordPress plugin.
+Theme template examples for the <a href="https://www.itthinx.com/plugins/groups-forums/">Groups Forums</a> WordPress plugin.
 
 This repository gathers theme-specific templates for the legacy templates in Groups Forums.
 
